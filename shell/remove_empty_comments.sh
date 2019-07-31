@@ -1,3 +1,3 @@
 #!/bin/sh
 
-find . -name '*.java' -exec sed -i -e "s/ \/\/$//"  -e "s/\/\/$//" {}  \;
+find . -name '*.java' -exec sed "s| *//$||" {}  \;
