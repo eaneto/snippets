@@ -2,6 +2,8 @@
 
 current_directory=$(pwd)
 
+pip3 install -U --user youtube-dl
+
 if [ "$current_directory" = $HOME/Music ];
 then
     youtube-dl "$1" -i -x --audio-format vorbis
