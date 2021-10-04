@@ -4,5 +4,5 @@ monitor=$(xrandr | grep -w "connected" | wc -l)
 
 if [ $monitor = 2  ];
 then
-    xrandr --output HDMI1 --right-of eDP1 --auto
+    xrandr --output HDMI-1 --right-of eDP-1 --auto
 fi
